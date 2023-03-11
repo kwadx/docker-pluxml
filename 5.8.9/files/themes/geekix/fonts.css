@@ -1,0 +1,56 @@
+/* CALIBRI */
+
+@font-face {
+  font-family: 'calibri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('calibri'), url('fonts/calibri.woff') format('woff');
+}
+
+/* UBUNTU */
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url('fonts/ubuntu.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('fonts/ubuntu-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('fonts/ubuntu-italic.woff') format('woff');
+}
+
+/* OPENSANS */
+
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('opensans'), local('opensans'), url('fonts/opensans.woff') format('woff');
+}
+@font-face {
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('opensans-bold'), local('opensans-bold'), url('fonts/opensans-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'opensans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('opensans-italic'), local('opensans-italic'), url('fonts/opensans-italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'opensans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('opensans-bold-italic'), local('opensans-bold-italic'), url('fonts/opensans-bold-italic.woff') format('woff');
+}
