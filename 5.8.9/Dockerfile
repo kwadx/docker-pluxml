@@ -85,8 +85,10 @@ RUN set -xe; \
     rm -rf /var/lib/apt/lists/*
 
 COPY files/themes/geekix /var/www/html/themes/geekix
+COPY files/themes/vanilla-keystone /var/www/html/themes/vanilla-keystone
 
 RUN chown -R www-data: /var/www/html/themes/geekix
+RUN chown -R www-data: /var/www/html/themes/vanilla-keystone
 
 VOLUME /var/www/html/data
 
