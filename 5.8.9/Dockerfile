@@ -84,11 +84,17 @@ RUN set -xe; \
     apt-get install -y --no-install-recommends $smtpDeps; \
     rm -rf /var/lib/apt/lists/*
 
+COPY files/themes/geekix /var/www/html/themes/geekix
+
+RUN chown -R www-data: /var/www/html/themes/geekix
+
 VOLUME /var/www/html/data
 
-COPY docker-entrypoint.sh /usr/local/bin/
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+RUN chmod u+x /usr/local/bin/docker-entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 # Inherited
 # 
